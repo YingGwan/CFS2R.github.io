@@ -13,3 +13,4 @@
 5. deploy web
    1. open resp Settings -> Pages:
    2. After deploy, the weblink should be: https://<yourname>.github.io/<your-repo>/
+   3. https://yinggwan.github.io/CFS2R.github.io/
