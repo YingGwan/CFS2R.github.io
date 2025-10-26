@@ -1,14 +1,13 @@
-# Nerfies
+# CFS2R
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the paper:
 
-If you find Nerfies useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@article{tian2025correspondence,
+  title={Correspondence-Free, Function-Based Sim-to-Real Learning for Deformable Surface Control},
+  author={Tian, Yingjun and Fang, Guoxin and Su, Renbo and Lyu, Aoran and Dutta, Neelotpal and Gill, Simeon and Weightman, Andrew and Wang, Charlie CL},
+  journal={arXiv preprint arXiv:2509.00060},
+  year={2025}
 }
 ```
 
