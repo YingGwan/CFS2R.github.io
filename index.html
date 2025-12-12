@@ -234,14 +234,12 @@
 <!-- <section class="hero teaser"> -->
   <!-- <div class="container is-max-desktop"> -->
     <!-- <div class="hero-body"> -->
-      <!-- <video id="teaser" autoplay muted loop playsinline height="100%"> -->
-        <!-- <source src="./static/videos/teaser.mp4" -->
+      <!-- <video id="teaser" autoplay muted loop playsinline height="80%"> -->
+        <!-- <source src="./static/videos/MannequinGIF1.mp4" -->
                 <!-- type="video/mp4"> -->
       <!-- </video> -->
       <!-- <h2 class="subtitle has-text-centered"> -->
-        <!-- <span class="dnerf">Nerfies</span> turns selfie videos from your phone into -->
-        <!-- free-viewpoint -->
-        <!-- portraits. -->
+        <!-- <span class="dnerf">Video</span> Deformable mannequin fabrication steps -->
       <!-- </h2> -->
     <!-- </div> -->
   <!-- </div> -->
@@ -347,6 +345,103 @@
 </section>
 
 
+
+<!-- !!!Figure -->
+<!-- TEASER SECTION: short looping video and one-sentence tagline that explains the project. -->
+<!-- <section class="hero teaser"> -->
+  <!-- <div class="container is-max-desktop"> -->
+    <!-- <div class="hero-body"> -->
+      <!-- <video id="teaser" autoplay muted loop playsinline height="80%"> -->
+        <!-- <source src="./static/videos/MannequinGIF1.mp4" -->
+                <!-- type="video/mp4"> -->
+      <!-- </video> -->
+      <!-- <h2 class="subtitle has-text-centered"> -->
+        <!-- <span class="dnerf">Video</span> Deformable mannequin fabrication steps -->
+      <!-- </h2> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </section> -->
+<hr class="section-divider" />
+<div class="appendix-title">Motivation & Challenges</div>
+<figure class="hero teaser adjustable-figure" style="--fig-width: 750px;">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img
+        id="teaser"
+        src="./static/images/problem.png"
+        alt="Motivation"
+        class="teaser-img"
+      />
+
+      <figcaption class="subtitle has-text-centered">
+        <span class="dnerf">Figure</span> The geometric data used to train sim-to-real mappings typically suffer from two issues: (1) unknown correspondences between scanned points and regions with partial missing data (from scanner), 
+		and (2) missing markers in some frames (from MoCap). To address these challenges, we propose a pipeline for robust and efficient sim-to-real transfer.
+      </figcaption>
+    </div>
+  </div>
+</figure>
+
+
+<hr class="section-divider" />
+<div class="appendix-title">Our Pipeline</div>
+<figure class="hero teaser adjustable-figure" style="--fig-width: 1000px;">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img
+        id="teaser"
+        src="./static/images/pipeline.jpg"
+        alt="Pipeline"
+        class="teaser-img"
+      />
+
+      <figcaption class="subtitle has-text-centered">
+        <span class="dnerf">Figure</span> The deformation and the correspondence are <strong style="color:#d32f2f;">co-optimized</strong> with the help of weighted chamfer distance loss, the confidence regularization and the geometry regularization.
+      </figcaption>
+    </div>
+  </div>
+</figure>
+
+<!-- <div class="appendix-title">Co-Optimization Process</div> -->
+<section class="hero teaser"> <div class="container is-max-desktop"> <div class="hero-body">
+ <video id="teaser" autoplay muted loop playsinline height="80%"> 
+ <source src="./static/videos/CoOpt.mp4" type="video/mp4"> 
+ </video> <h2 class="subtitle has-text-centered">
+ <span class="dnerf">Video</span> Co-learning of deformation and correspondence with partially missed scan as input </h2> 
+ </div> 
+ </div> 
+ </section>
+
+
+<!-- <figure class="hero teaser adjustable-figure" style="--fig-width: 700px;"> -->
+<!-- <div class="content"> -->
+<!-- <h2 class="title is-3">Co-Optimization</h2> -->
+<!-- <p> -->
+<!-- Hello -->
+<!-- </p> -->
+<!-- <video id="CoOpt" autoplay controls muted loop playsinline height="100%"> -->
+<!-- <source src="./static/videos/CoOpt.mp4" -->
+		<!-- type="video/mp4"> -->
+<!-- </video> -->
+<!-- </div> -->
+<!-- </figure> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr class="section-divider" />
+<div class="appendix-title">Appendix: Fabrication steps of surface actuator</div>
+
+
 <section class="section">
   <div class="container is-max-desktop">
 
@@ -354,36 +449,34 @@
 
       <!-- Visual Effects. -->
       <div class="column">
-        <!-- <div class="content"> -->
-          <!-- <h2 class="title is-3">Visual Effects</h2> -->
-          <!-- <p> -->
-            <!-- Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect -->
-            <!-- would be impossible without nerfies since it would require going through a wall. -->
-          <!-- </p> -->
-          <!-- <video id="dollyzoom" autoplay controls muted loop playsinline height="100%"> -->
-            <!-- <source src="./static/videos/dollyzoom-stacked.mp4" -->
-                    <!-- type="video/mp4"> -->
-          <!-- </video> -->
-        <!-- </div> -->
+        <div class="content">
+          <h2 class="title is-3">Deformable Cruved Actuator Fabrication</h2>
+          <p>
+            Using <i>curved actuator</i> with hyper-elastic material, the deformation can be continuous with local curvature variation.
+          </p>
+          <video id="defCurvedAct" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/MannequinGIF2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
       </div>
       <!--/ Visual Effects. -->
 
       <!-- Matting. -->
       <div class="column">
-        <!-- <h2 class="title is-3">Matting</h2> -->
-        <!-- <div class="columns is-centered"> -->
-          <!-- <div class="column content"> -->
-            <!-- <p> -->
-              <!-- As a byproduct of our method, we can also solve the matting problem by ignoring -->
-              <!-- samples that fall outside of a bounding box during rendering. -->
-            <!-- </p> -->
-            <!-- <video id="matting-video" controls playsinline height="100%"> -->
-              <!-- <source src="./static/videos/matting.mp4" -->
-                      <!-- type="video/mp4"> -->
-            <!-- </video> -->
-          <!-- </div> -->
+        <h2 class="title is-3">Deformable Cruved Surface Fabrication</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              Using <i>curved molds</i> you can create deformable free-form surfaces with hyper-elastic material.
+            </p>
+            <video id="defCurvedSurf" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/MannequinGIF1.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
 
-        <!-- </div> -->
+        </div>
       </div>
     </div>
     <!--/ Matting. -->
@@ -480,6 +573,12 @@
 </section>
 
 
+
+
+
+
+
+
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
@@ -516,3 +615,41 @@
 
 </body>
 </html>
+
+
+<style>
+  .section-divider{
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 960px;
+  }
+
+  .adjustable-figure .hero-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .adjustable-figure .teaser-img{
+    width: min(var(--fig-width), 100%);
+    height: auto;
+    display: block;
+  }
+  
+.appendix-title{
+  margin: 0.5rem auto 1.5rem;
+  width: 100%;
+  max-width: 960px;
+  font-weight: 600;
+  color: #d32f2f;
+  font-size: 2.5rem;
+  padding: 0 0.75rem;
+  
+  .figureBold{
+  color: #d32f2f;
+  font-weight: 700;
+}
+}
+</style>
